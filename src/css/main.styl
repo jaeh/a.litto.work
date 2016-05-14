@@ -8,6 +8,8 @@ $a-color-hover = #83a599
 $cta-border-color = #000a96
 $cta-active-bg-color = #d8f2e9
 
+$logo-background-color = #fff
+
 @font-face
   font-family Ubuntu
   font-style normal
@@ -90,6 +92,24 @@ body
 
       h3 span.border
         border 0
+
+#logo
+  border-bottom-color transparent
+  border-left-color $logo-background-color
+  border-right-color transparent
+  border-style solid
+  border-top-color $logo-background-color
+  border-width 40px
+  left 0
+  position fixed
+  top 0
+  z-index 2
+
+  img
+    height 30px
+    left -35px
+    position absolute
+    top -35px
 
 #wrapper
   max-width 1200px
@@ -179,8 +199,8 @@ section
       margin 0
 
     img
-      height 90vh
-      width auto
+      max-height 90vh
+      max-width 100%
       margin 0
 
   img,
